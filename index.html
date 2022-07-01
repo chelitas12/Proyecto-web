@@ -1,145 +1,69 @@
-#e32bff<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Normalize CSS -->
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="estilos/styles.css">
-  <!-- JAM icons -->
-  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-  <title>Inicio | MICHELADAS</title>
-</head>
-    <body>
-     <!-- Cabecera (Logo y menú de navegación) -->
-  <header class="main-header">
-    <div class="content-wrapper">
-      <a href="/">
-        <img src="img/ana.png" 
-        alt="Logo ms">
-      </a>
-      <span id="open-menu-button" class="jam jam-menu"></span>
-      <nav id="main-menu" class="main-menu">
-        <span id="close-menu-button" class="jam jam-close"></span>
-        <ul>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li>
-            <a href="quienes-somos.html">¿Quiénes somos?</a>
-          </li>
-          <li>
-            <a href="proyectos.html">Proyectos</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- Banner principal -->
-    <section class="main-banner section-container">
-      <div class="content-wrapper content">
-        <div class="container">
-          <h1 class="title">No lo pienses dos veces</h1>
-          <p class="subtitle">¿Necesitas alguna cotización? Te ofrecemos el precio más competitivo del mercado con una gran carta de trabajos y clientes que nos respaldan .</p>
-          <div>
-            <a class="button white" href="/contacto.html">Escríbenos ya mismo!</a>
-          </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Acme Web Deisgn | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Acme</span> Web Design</h1>
         </div>
-        <div class="container">
-          <img class="image" src="img/ana.png" alt="Computadora EDsoft">
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./img/logo_html.png">
+          <h3>HTML5 Markup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_css.png">
+          <h3>CSS3 Styling</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
       </div>
     </section>
-    <!-- Nuestros servicios -->
-    <section class="services-section section-container">
-      <h2>Micheladas</h2>
-      <div class="content-wrapper">
-        <article class="service-item">
-          <span class="jam jam-beer"></span>
-          <h3>Contenido</h3>
-          <p>Cerveza, clamato , limon , salsa inglesa , jugo maggie y sal</p>
-        </article>
-        <article class="service-item">
-          <span class="jam jam-crown"></span>
-          <h3>Decoración </h3>
-          <p>Escarchada de chilito , banderillas , gomitas o apio.</p>
-        </article>
-        <article class="service-item">
-          <span class="jam jam-glass-filled"></span>
-          <h3>LAS MEJORES!  </h3>
-          <p>Amor alegria y cerveza fria te esperamos!</p>
-        </article>
-      </div>
-    </section>
-    <!-- Sobre nosotros -->
-    <section class="section-container about-section">
-      <div class="content-wrapper">
-        <h2 class="title">Sobre nosotros</h2>
-        <p>Somos  una estación de usos múltiples comprometidos con el bienestar y calidad de nuestros clientes...</p>
-        <a href="/proyectos.html" class="button white ghost">Ver experiencia</a>
-      </div>
-      <img class="background" src="img/ana.png" alt="Alumnos estudiando">
-    </section>
-    <!-- Ultimos proyectos -->
-<section class="section-container last-projects">
-  <h2>Últimos proyectos</h2>
-  <div class="content-wrapper">
-    <a href="#" class="project-item">
-      <article>
-        <div>
-          <h4>Historia</h4>
-          <p>Explica principalmente de la evolucion de la comunicación y la fractura en las relaciones sociales </p>
-        </div>
-        <div class="image-container">
-          <img src="img/historia.png" alt="Proyecto 1">
-        </div>
-      </article>
-    </a>
-    <a href="proyectos.html" class="project-item">
-      <article>
-        <div>
-          <h4>Psicología</h4>
-          <p>Explica sobre los daños fisicos , psicologicos y sociales con su definición de ¿ cuales son?, ¿en que consisten? y ¿como afectan?</p>
-        </div>
-        <div class="image-container">
-          <img src="img/psicología.png" alt="Proyecto 2">
-        </div>
-      </article>
-    </a>
-    <a href="#" class="project-item">
-      <article>
-        <div>
-          <h4>ingles</h4>
-          <p>Trato sobre los ¿sabias que? que explicaban algunos sucesos sobre el covid-19</p>
-        </div>
-        <div class="image-container">
-          <img src="img/ingles.png" alt="Proyecto 3">
-        </div>
-      </article>
-    </a>
-    
-  </div>
-</section>
-<!--  Trabajar con nosotros  -->
-    <section class="work-with-us">
-      <div class="content-wrapper">
-        <h2 class="title">¿Quieres trabajar con nosotros?</h2>
-        <p class="subtitle">Es momento de convertir tu idea en algo real.  Puedes contactarnos en nuestras redes sociales<br/> o enviando un correo a:</p>
-        <a href="mailto:contacto@iscramirezhh@gmail.com" class="button">anairod981@gmail.com</a>
-        <div class="social-networks">
-          <a href="https://www.facebook.com/Ana Rodriguez" target="_blank"><span class="jam jam-facebook"></span></a>
-          <a href="#" target="_blank"><span class="jam jam-twitter"></span></a>
-          <a href="https://wa.me/7221165624" target="_blank"><span class="jam jam-whatsapp"></span></a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <p>Todos los derechos reservados © 2022 | Masters Solutions</p>
-  </footer>
+
+    <footer>
+      <p>Acme Web Deisgn, Copyright &copy; 2019</p>
+    </footer>
   </body>
-  </html>
+</html>
